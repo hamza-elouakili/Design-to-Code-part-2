@@ -1,0 +1,84 @@
+.content
+    display: flex
+    flex-direction: row
+    justify-content: center
+    font-family: $text-font
+    min-width: 1400px           //otherwise the elements will overflow --> fix this with responsive design
+    fieldset
+        margin-top: $blh * 1.5
+        width: $blh * 47
+        height: $blh * 24.3
+        border-color: $teaser-box-border
+        border-radius: 6.5px
+        text-align: center
+        legend
+           margin: 0 auto
+           padding-left: $blh
+           padding-right: $blh
+           font-weight: $bold
+           line-height: $blh
+           font-size: $bfs * 1.5
+           color: $title-text
+           font-family: $title-font
+           margin-bottom: $blh * .3
+        p
+            margin: 0 auto
+            width: $blh * 20
+            line-height: $blh
+            margin-bottom: $blh * 1
+            font-family: $text-font
+            color: $content-info-text
+            font-style: italic
+        .content__teaserbox
+            //margin-top: $blh * 2
+            //display:inline-table
+            margin: 0 auto
+            background-color: $teaser-box-background
+            width: $blh * 27
+            height: $blh * 17.8
+            border-radius: 6.5px
+            border: 1px $teaser-box-border solid
+            color: $foreground
+            position: relative
+            img
+                margin-top: $blh
+                height: $blh * 10
+                width: $blh * 25
+            h2
+                text-align: left
+                margin-left: $blh
+                line-height: $blh
+                font-family: $title-font
+            p
+                margin-top: $blh
+                text-align: left
+                margin-left: $blh
+                font-size: $bfs * .9
+                font-style: normal
+                line-height: $blh
+                color: $foreground
+                font-family: $text-font
+            &__button
+                position: absolute
+                top: $blh * .2
+                left: $blh * 28
+                &__content
+                    width: $blh * 4.5
+                    height: $blh * 1.3
+                    border: 1px $teaser-box-border solid
+                    border-radius: 25px
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    background-color:  $teaser-box-background
+                    a
+                        text-decoration: none
+                        font-size: $bfs * .8
+                        font-weight: $bold
+                        font-family: $text-font
+
+
+
+
+
+

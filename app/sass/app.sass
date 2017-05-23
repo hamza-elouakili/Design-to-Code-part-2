@@ -1,0 +1,27 @@
+
+//css reset
+@import vendor/normalize-css/normalize
+// Abstracts (vars, colors, helpers, media, uitls)
+@import "node_modules/compass-sass-mixins/lib/compass/css3"
+
+@import abstracts/all
+
+@import base
+
+@import baseHeaderOne
+
+@import baseInfo
+
+@import baseContent
+
+@import task1
+
+
+
+
+//Sass werkt met een main sass file, waarin alle sass files worden geimporteerd
+//de laagste sass file kan dependencies hebben op de files erbovenop
+//maar de file boven kan geen dependencies hebben op de file eronder want
+//die kent die dan nog niet
+
+

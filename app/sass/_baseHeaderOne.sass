@@ -1,0 +1,78 @@
+nav
+    //height: $blh * 2
+    min-width: 1400px           //otherwise the elements will overflow --> fix this with responsive design
+    height: $blh * 3
+    display: flex
+    flex-direction: row
+    align-items: center         //center the ul element inside the div
+    justify-content: center
+    ul
+        font-family: $title-font
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        padding-left: 0
+        list-style-type: none
+        line-height: $blh
+        margin: 0
+        li:nth-child(1)
+            width: $blh
+        li:nth-child(2)
+            width: $blh * 5
+            margin-left: $blh * 3
+        li:nth-child(3)
+            width: $blh
+            margin-left: $blh * 3
+        li:nth-child(4)
+            width: $blh * 3
+            margin-left: $blh * 3
+        li:nth-child(5)
+            width: $blh
+            margin-left: $blh * 3
+        li:nth-child(6)
+            width: $blh * 4
+            margin-left: $blh * 3
+        li:nth-child(7)
+            width: $blh
+            margin-left: $blh * 3
+        li:nth-child(8)
+            width: $blh
+            margin-left: $blh * 4
+        li:nth-child(9)
+            min-width: $blh
+            margin-left: $blh * 4
+        li:nth-child(10)
+            width: $blh * 3
+            margin-left: $blh * 3
+        li:nth-child(11)
+            width: $blh
+            margin-left: $blh * 3
+    ul > li
+        font-size: $bfs * .9
+        .underline
+            border-bottom: 2px solid $header-underline
+            font-weight: $bold
+            padding-bottom: 2px
+        a
+            text-decoration: none
+            //color: inherit
+    li.outer-icon
+        -ms-transform: scale(.7)
+        -webkit-transform: scale(.7)
+        transform: scale(.7)
+        position: relative
+        top: $blh * .15
+    li.inner-icon
+        -ms-transform: scale(.5)
+        -webkit-transform: scale(.5)
+        transform: scale(.5)
+        position: relative
+        top: $blh * .1
+
+
+
+
+
+
+
+

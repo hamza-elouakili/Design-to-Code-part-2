@@ -1,32 +1,39 @@
 footer
     border-top: 2px solid $footer-overline
     .footerbox
-        display: flex
-        flex-direction: row
-        align-items: center
-        margin-left: $blh * 5
-        margin-right: $blh * 5
-        height: $blh * 3
-        font-weight: $bold
-        text-transform: uppercase
-        font-family: $text-font
-        .icon
+        ul
+            display: flex
+            justify-content: center
+            align-items: center
+            list-style-type: none
+            line-height: $blh
+            text-transform: uppercase
+            font-weight: $bold
+            font-size: $bfs * .9
+            li:nth-child(1)
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-left: $blh * 2
+                position: relative
+                left: 7px
+            li:nth-child(2)
+                margin-right: $blh * 44
+                position: relative
+                left: 7px
+            li:nth-child(3)
+                position: relative
+                left: -$blh * .8
+            li:nth-child(4)
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: $blh * 3
+                position: relative
+                left: -$blh * .8
+        ul > li.icon
             -ms-transform: scale(.7)
             -webkit-transform: scale(.7)
             transform: scale(.7)
-        &__box1
-            flex: 1
-            display: flex
-            flex-direction: row
-            align-items: center
-            span
-                margin-right: $blh * .5
-        &__box2
-            flex: 1
-            display: flex
-            flex-direction: row
-            align-items: center
-            justify-content: flex-end
-            span
-                margin-right: $blh * .5
+
 

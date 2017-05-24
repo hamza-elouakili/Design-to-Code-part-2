@@ -1,14 +1,16 @@
-.content
+.default-teaser
+    overflow: hidden
     display: flex
     flex-direction: row
     justify-content: center
+    //flex-wrap: wrap
     font-family: $text-font
-    min-width: 1400px           //otherwise the elements will overflow --> fix this with responsive design
-    fieldset
+    //min-width: 1400px           //otherwise the elements will overflow --> fix this with responsive design
+    fieldset.top
         margin-top: $blh * 1.5
         width: $blh * 47
-        height: $blh * 24.3
-        border-color: $teaser-box-border
+        height: $blh * 24.5
+        border-color: $options-border
         border-radius: 6.5px
         text-align: center
         legend
@@ -23,19 +25,20 @@
            margin-bottom: $blh * .3
         p
             margin: 0 auto
-            width: $blh * 20
+            width: $blh * 16
             line-height: $blh
             margin-bottom: $blh * 1
             font-family: $text-font
             color: $content-info-text
             font-style: italic
+            font-size: $bfs * .8
         .content__teaserbox
             //margin-top: $blh * 2
             //display:inline-table
             margin: 0 auto
             background-color: $teaser-box-background
             width: $blh * 27
-            height: $blh * 17.8
+            height: $blh * 18
             border-radius: 6.5px
             border: 1px $teaser-box-border solid
             color: $foreground
@@ -58,6 +61,7 @@
                 line-height: $blh
                 color: $foreground
                 font-family: $text-font
+                width: $blh * 21
             &__button
                 position: absolute
                 top: $blh * .2
@@ -76,7 +80,119 @@
                         font-size: $bfs * .8
                         font-weight: $bold
                         font-family: $text-font
-
+.more-options
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .more-options-box
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin-top: $blh * 2
+        //border: 1px black solid
+        &__tags-text
+            //border: 1px solid black
+            width: $blh * 17
+            line-height: $blh
+            h4
+                margin: 0
+                font-family: $title-font
+            p
+                margin-top: 0
+                font-family: $text-font
+                font-style: italic
+                font-size: $bfs * .8
+                color: $content-info-text
+        &__tags-info
+            width: $blh * 29
+            margin-left: $blh
+            //border: 1px solid black
+            position: relative
+            top: 4px
+            input
+                width: $blh * 29
+                border: none
+                height: $blh
+            input.small
+                width: $blh * 4
+            input.smaller
+                 width: $blh * 2
+            &__inside
+                position: absolute
+                bottom: $blh * 1.9
+                display: flex
+                flex-direction: row
+                align-items: center
+                .tag
+                    background-color: $tag-background-color
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: center
+                    position: relative
+                    top: -2px
+                    margin-right: $blh * .5
+                    border-radius: 25px
+                    height: $blh
+                    width: $blh * 3.5
+                    .text
+                        margin-left: $blh * .5
+                        font-family: $text-font
+                        font-weight: $medium
+                        font-size: $bfs * .9
+                    .icon
+                        -ms-transform: scale(.7)
+                        -webkit-transform: scale(.7)
+                        transform: scale(.7)
+                        position: relative
+                        top: 1.5px
+                        margin-left: $blh * .3
+                .icon
+                    -ms-transform: scale(1.7)
+                    -webkit-transform: scale(1.7)
+                    transform: scale(1.7)
+                    margin-right: $blh * .5
+                    margin-left: $blh * .7
+            &__border
+                height: $blh * 2
+                display: flex
+                flex-direction: row
+                align-items: center
+                background-color: $options-background-color
+                border: 1px $options-border solid
+                border-radius: 6.5px
+                input.big
+                    height: $blh * 1.6
+            .specialborder
+                width: $blh * 10
+                border: 1px $options-border solid
+                position: relative
+                top: $blh * (-.7)
+                span.icon
+                    margin-left: $blh * .7
+                    margin-right: $blh * .5
+                input
+                    font-family: $number-font
+                    color: $foreground
+                    font-weight: $bold
+                    font-size: $bfs * .8
+                    position: relative
+                    top: -1px
+            .specialbox
+                margin-top: $blh * 1.5
+    h2
+        margin-top: $blh * .5
+        text-align: center
+        border-bottom: 1px $options-border solid
+        width: $blh * 47
+        font-family: $title-font
+        span
+            background: $text-background
+            position: relative
+            top: $blh * .5
+            padding-left: $blh * 2
+            padding-right: $blh * 2
 
 
 

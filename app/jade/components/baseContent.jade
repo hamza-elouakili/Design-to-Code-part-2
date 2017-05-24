@@ -1,21 +1,52 @@
-fieldset
-    legend Default Teaser
-    p.
-        Click on the teasertext of image to edit it. These will be used by default
-        whenever you want to publish your article, of course you can customize them
-        for each specific publication
-    .content__teaserbox
-        img(src="assets/img/duck.png")
-        h2 I am just a title
+.default-teaser
+    fieldset.top
+        legend Default Teaser
         p.
-            Lorem ipsum and then some ipsum and then some ipsum  and then some ipsum
-            and then some ipsum and then some ipsum and then some ipsum and then some ipsum
-            and then some ipsum and then some ipsum.
-        .content__teaserbox__button
-            .content__teaserbox__button__content
-                a(href="") Replace Image
+            Click on the teasertext of image to edit it. These will be used by default
+            whenever you want to publish your article, of course you can customize them
+            for each specific publication
+        .content__teaserbox
+            img(src="assets/img/duck.png")
+            h2 I am just a title
+            p.
+                Lorem ipsum and then some ipsum and then some ipsum  and then some ipsum
+                and then some ipsum and then some ipsum and then some ipsum and then some ipsum
+                and then some ipsum and then some ipsum.
+            .content__teaserbox__button
+                .content__teaserbox__button__content
+                    a(href="") Replace Image
 
-
-
-
-
+.more-options
+    .more-options-box
+        .more-options-box__tags-text
+            h4 Tags
+            p.
+                Consecteur adipiscing elit. Maecenas efficitur fringilla fermentum
+                integer sed sapien eufelis dignissim rhoncus. (optional)
+        .more-options-box__tags-info
+            .more-options-box__tags-info__border
+                input.big(href="text")
+            .more-options-box__tags-info__inside
+                span.icon: include icons/tag.html
+                .tag
+                    span.text Soccer
+                    a(href="").icon: include icons/close.html
+                .tag
+                    span.text Leisure
+                    a(href="").icon: include icons/close.html
+                .tag
+                    span.text Fun
+                    a(href="").icon: include icons/close.html
+    .more-options-box.specialbox
+        .more-options-box__tags-text
+            h4 Publish Date and Time
+            p.
+                Lorem ipsun dolor sit amet, consecteur adipiscing elit. Maecenas
+                efficitur fringilla fermentum. Integer se sapien eu felis dignissim.
+        .more-options-box__tags-info
+            .more-options-box__tags-info__border.specialborder
+                span.icon: include icons/calendar.html
+                input.small(value="24/03/2017")
+                span.icon: include icons/time.html
+                input.smaller(value="17:01")
+    h2: span More Options

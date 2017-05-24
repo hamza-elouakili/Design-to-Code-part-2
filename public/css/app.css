@@ -451,6 +451,7 @@ nav {
     font-family: Roboto Condensed, Arial, sans-serif;
     margin-bottom: 0; }
   .info__help-button {
+    cursor: pointer;
     line-height: 1.625rem;
     margin-top: 0.8125rem;
     width: 5.6875rem;

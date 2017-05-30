@@ -1,0 +1,75 @@
+.baseMenu
+    ul.top
+        list-style-type: none
+        padding: 0
+        padding-top: $blh
+        margin: 0
+        font-family: $text-font
+        li > ul li
+            margin-left: blh(.35)
+        li
+            line-height: $blh
+            font-weight: $bold
+            font-size: $bfs * .9
+            .menu-item
+                padding-left: $blh
+                display: flex
+                align-items: center
+                span.uppercase
+                    text-transform: uppercase
+                span.icon-accordion
+                    width: $blh
+                    height: $blh
+                    position: relative
+                    top: 3px
+                    -ms-transform: scale(.8)
+                    -webkit-transform: scale(.8)
+                    transform: scale(.8)
+                span.publications
+                    margin-right: blh(2.5)
+                span.account
+                    margin-right: blh(3.7)
+                .icon-angledown
+                    display: block
+                    -ms-transform: scale(.5)
+                    -webkit-transform: scale(.5)
+                    transform: scale(.5)
+                    position: relative
+                    top: 2px
+            .help
+                position: absolute
+                bottom: 0px
+                .help-box
+                    border: 1px solid black
+                    border-radius: 50%
+                    height: blh(.8)
+                    width: blh(.8)
+                    position: relative
+                    left: -2px
+                    .help-icon
+                        position: relative
+                        left: 1px
+                        -ms-transform: scale(.8)
+                        -webkit-transform: scale(.8)
+                        transform: scale(.8)
+                span
+                    margin-left: blh(.2)
+        li > ul
+            padding-left: blh(1.7)
+            list-style-type: none
+            li
+                font-weight: $regular
+                font-size: $bfs * .8
+                padding-top: blh(.3)
+            li:last-child
+                padding-bottom: blh(.3)
+        li > ul.accordion
+            //background-color: $accordion-background
+            border-top: 1px $header-border solid
+            border-bottom: 1px $header-border solid
+            //box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1)
+            background: $accordion-background
+            background: -webkit-linear-gradient(left top, $accordion-background, $accordion-background2)
+            background: -o-linear-gradient(right right, $accordion-background, $accordion-background2)
+            background: -moz-linear-gradient(right right,$accordion-background, $accordion-background2)
+            background: linear-gradient(to right right, $accordion-background, $accordion-background2)

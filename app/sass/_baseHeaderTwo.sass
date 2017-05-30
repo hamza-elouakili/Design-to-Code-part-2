@@ -1,0 +1,132 @@
+.baseHeaderTwo
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: $blh
+    position: relative
+    top: blh(-0.2)
+    &__logo
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-left: $blh
+        heigth:  blh(1.2)
+        width: blh(7)
+        img
+            width: $blh
+            height: $blh
+            -ms-transform: scale(1.5)
+            -webkit-transform: scale(1.5)
+            transform: scale(1.5)
+        span
+            margin-left: blh(.5)
+            min-width: blh(6)
+            font-size: $bfs * 1.6
+            line-height: $blh
+            font-weight: $bold
+            font-family: $title-font
+    &__search
+        margin-left: blh(3)
+        height:  blh(1.2)
+        display: flex
+        flex-direction: row
+        align-items: center
+        input
+            margin-left: blh(.5)
+            width: blh(25)
+            border: none
+            color: black
+            &::placeholder
+                color: $placeholder-text
+    &__menu
+        display: flex
+        flex-direction: row
+        align-items: center
+        height:  blh(1.2)
+        font-family: $title-font
+        span.info
+            font-style: italic
+            color: $header-item
+            min-width: blh(4)
+        span.sum
+            margin-left: blh(.1)
+            font-weight: 500
+            min-width: blh(3)
+            font-family: $number-font
+        span.choice
+            margin-left: blh(.5)
+            font-weight: $bold
+            text-transform: uppercase
+            font-family: $text-font
+    &__notification
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-left: blh(1.5)
+        height: blh(1.2)
+        border-left: 1px $options-border solid
+        border-right: 1px $options-border solid
+        font-family: $number-font
+        &__box-comments
+            display: flex
+            flex-direction: row
+            align-items: center
+            position: relative
+            -ms-transform: scale(1.3)
+            -webkit-transform: scale(1.3)
+            transform: scale(1.3)
+            margin-right: blh(.7)
+            margin-left: blh(.9)
+            &__inner
+                position: absolute
+                background-color: $notification-number
+                color: $text-background
+                border-radius: 50%
+                width: $blh * .45
+                height: $blh * .45
+                text-align: center
+                font-size: $bfs * .7
+                top: 9px
+                left: 8px
+        &__box-bell
+            display: flex
+            flex-direction: row
+            align-items: center
+            position: relative
+            -ms-transform: scale(1.3)
+            -webkit-transform: scale(1.3)
+            transform: scale(1.3)
+            margin-right: blh(.9)
+            &__inner
+                position: absolute
+                background-color: $notification-number
+                color: $text-background
+                border-radius: 50%
+                width: $blh * .45
+                height: $blh * .45
+                text-align: center
+                font-size: $bfs * .7
+                top: 9px
+                left: 9px
+
+    &__dashboard
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-left: blh(1)
+        img
+            width: blh(1.2)
+            height: blh(1.2)
+            border-radius: 50%
+        span
+            margin-left: blh(.3)
+            font-weight: $bold
+            min-width: blh(5)
+        .icon
+            -ms-transform: scale(.6)
+            -webkit-transform: scale(.6)
+            transform: scale(.6)
+            width: $blh
+
+
+

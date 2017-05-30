@@ -1,39 +1,64 @@
-footer
+footer.task1
     border-top: 2px solid $footer-overline
+    font-weight: $bold
+    text-transform: uppercase
+    font-size: $bfs * .9
     .footerbox
-        ul
+        display: flex
+        align-items: center
+        margin-top: $blh
+        width: blh(47.2)
+        margin-left: blh(8.4)
+        .back
             display: flex
-            justify-content: center
             align-items: center
-            list-style-type: none
-            line-height: $blh
-            text-transform: uppercase
-            font-weight: $bold
-            font-size: $bfs * .9
-            li:nth-child(1)
-                display: flex
-                justify-content: center
-                align-items: center
-                margin-left: $blh * 2
-                position: relative
-                left: 7px
-            li:nth-child(2)
-                margin-right: $blh * 44
-                position: relative
-                left: 7px
-            li:nth-child(3)
-                position: relative
-                left: -$blh * .8
-            li:nth-child(4)
-                display: flex
-                justify-content: center
-                align-items: center
-                margin-right: $blh * 3
-                position: relative
-                left: -$blh * .8
-        ul > li.icon
+            float: left
+            width: 50%
+        .next
+            float: right
+            width: 50%
+            display: flex
+            justify-content: flex-end
+            align-items: center
+        .icon
             -ms-transform: scale(.7)
             -webkit-transform: scale(.7)
             transform: scale(.7)
+            position: relative
+            top: 1px
+        // ul
+        //     display: flex
+        //     justify-content: center
+        //     align-items: center
+        //     list-style-type: none
+        //     line-height: $blh
+        //     text-transform: uppercase
+        //     font-weight: $bold
+        //     font-size: $bfs * .9
+        //     li:nth-child(1)
+        //         display: flex
+        //         justify-content: center
+        //         align-items: center
+        //         margin-left: $blh * 2
+        //         position: relative
+        //         left: 7px
+        //     li:nth-child(2)
+        //         margin-right: $blh * 44
+        //         position: relative
+        //         left: 7px
+        //     li:nth-child(3)
+        //         position: relative
+        //         left: -$blh * .8
+        //     li:nth-child(4)
+        //         display: flex
+        //         justify-content: center
+        //         align-items: center
+        //         margin-right: $blh * 3
+        //         position: relative
+        //         left: -$blh * .8
+        // ul > li.icon
+        //     -ms-transform: scale(.7)
+        //     -webkit-transform: scale(.7)
+        //     transform: scale(.7)
 
 

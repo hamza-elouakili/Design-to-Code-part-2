@@ -1,31 +1,26 @@
-.page-container-task2
+.responsivebox
+    width: auto
     display: flex
-    flex-direction: column
-    min-width: $blh * 58
-    header
-        overflow: hidden
-        background-color: $header-background
-        border-bottom: 2px solid $header-border
-        color: $header-text
-        height: $blh * 3
-        min-width: 1200px
-    section
-        display: flex
-        flex-direction: row
-        .menu
-            width: blh(10)
-            $headersize: blh(3)
-            height: calc(90vh)
-            border-right: 1px solid $header-border
-        .content
-            background-color: red
-            height: 10px
-            flex: 1
-        .aside
-            width: blh(16)
-            background-color: green
-            height: 50px
-            border-left: 5px solid black
-    footer.task2
-        background-color: green
+    justify-content: center
+    .page-container-task2
+        width: blh(57)
+        // min-width: blh(57)
+        // max-width: blh(57)
+        background-color: pink
+        header
+            border-bottom: 1px solid $header-border
+            height: blh(3)
+            display: flex
+            align-items: center
+        section.task2
+            display: flex
+            .menu
+                height: 100%
+                width: blh(11)
+                border-right: 1px solid $header-border
+            .content
+                width: blh(32)
+            .aside
+                width: blh(13)
+                border-left: 1px solid $header-border
 

@@ -18,8 +18,7 @@ nav.baseHeaderOne
         line-height: $blh
         li:nth-child(1)
             width: $blh
-            position: relative
-            left: 1px
+            margin-left: blh(1)
         li:nth-child(2)
             width: $blh * 4
             margin-left: $blh * 2
@@ -46,12 +45,12 @@ nav.baseHeaderOne
             margin-left: $blh * 4
         li:nth-child(10)
             width: $blh * 3
-            margin-left: $blh * 2
+            margin-left: blh(2.9)
         li:nth-child(11)
             width: $blh
             margin-left: $blh
             position: relative
-            left: 2px
+            right: blh(.9)
     ul > li
         font-size: $bfs * .9
         .underline

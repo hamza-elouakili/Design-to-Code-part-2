@@ -1,7 +1,7 @@
 .menu
     display: flex
     flex-direction: column
-    margin-right: $blh
+    //margin-right: $blh
     &__up
         flex: 1
         ul.top
@@ -14,6 +14,7 @@
                 margin-left: blh(.35)
             li
                 line-height: $blh
+                margin-bottom: blh(.65)
                 font-weight: $bold
                 font-size: $bfs * .9
                 .menu-item
@@ -43,16 +44,16 @@
                         transform: scale(.5)
                         position: absolute
                         right: $blh
-                        //top: 2px
+                        top: 3.5px
             li > ul
                 padding-left: blh(1.9)
                 list-style-type: none
                 li
                     font-weight: $regular
                     font-size: $bfs * .8
-                    padding-top: blh(.3)
+                    margin-top: blh(.4)
                 li:last-child
-                    padding-bottom: blh(.3)
+                    margin-bottom: 0
             li > ul.accordion
                 //background-color: $accordion-background
                 border-top: 1px $header-border solid

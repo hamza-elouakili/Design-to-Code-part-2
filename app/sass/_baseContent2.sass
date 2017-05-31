@@ -1,10 +1,135 @@
 .content-container
     &__layerOne-box
         display: flex
-        background-color: green
-        //width: blh(37)
+        align-items: center
+        line-height: $blh
+        font-weight: $bold
+        margin-top: $blh
         &__breadcrumb
-            width: 50%
+            margin-left: $blh
+            flex: 1
+            display: flex
+            align-items: center
+            text-transform: uppercase
+            font-size: $bfs * .8
+            font-family: $title-font
+            color: $breadcrumb-color
+            .icon
+                display: flex
+                align-items: center
+                -ms-transform: scale(.6)
+                -webkit-transform: scale(.6)
+                transform: scale(.6)
+                position: relative
+                top: -1px
+                left: 3px
+                width: $blh
+                fill: $breadcrumb-color-icon
         &__settings
+            display: flex
+            justify-content: flex-end
+            margin-right: $blh
             float: right
-            width: 50%
+            position: relative
+            top: 5px
+    &__layerTwo-box
+        display: flex
+        align-items: center
+        height: blh(1)
+        margin-top: $blh
+        font-family: $text-font
+        font-size: $bfs * .8
+        .icon
+            display: block
+            -ms-transform: scale(.6)
+            -webkit-transform: scale(.6)
+            transform: scale(.6)
+            margin-left: blh(.9)
+            margin-right: blh(.1)
+        input
+            width: blh(18)
+            height: $blh
+            border: 1px solid $options-border
+            box-shadow: 2px 2px 2px $options-border
+            border-radius: 3.25px
+            margin-right: blh(.5)
+            margin-left: blh(.3)
+        ::-webkit-input-placeholder
+            font-family: $text-font
+            padding-left: blh(.5)
+            font-size: $bfs * .8
+        ::-moz-placeholder
+            color:  $text-font
+            padding-left: blh(.5)
+        :-ms-input-placeholder
+            color:  $text-font
+            padding-left: blh(.5)
+        :-moz-placeholder
+            color:  $text-font
+            padding-left: blh(.5)
+        span
+            font-style: italic
+            position: relative
+            top: 1px
+        .selectbox
+            display: flex
+            position: relative
+            select
+                height: $blh
+                border: 1px solid $options-border
+                box-shadow: 2px 2px 2px $options-border
+                border-radius: 3.25px
+                margin-left: blh(.4)
+                width: blh(7.1)
+                -webkit-appearance: none
+                -moz-appearance: none
+                text-indent: 1px
+                text-overflow: ''
+                padding-left: blh(.5)
+            .icon
+                position: absolute
+                right: 3px
+                top: 4px
+    &__layerThree-box
+        display: flex
+        align-items: center
+        height: blh(1)
+        margin-top: $blh
+        font-family: $text-font
+        font-size: $bfs * .8
+        .icon
+            display: block
+            margin-left: blh(.9)
+            margin-right: blh(.1)
+            -moz-transform: scaleX(-1) scale(.6)
+            -o-transform: scaleX(-1) scale(.6)
+            -webkit-transform: scaleX(-1) scale(.6)
+            transform: scaleX(-1) scale(.6)
+        span
+            font-style: italic
+            position: relative
+            top: 1px
+        .selectbox
+            display: flex
+            position: relative
+            width: blh(8.1)
+            select
+                height: $blh
+                border: 1px solid $options-border
+                border-radius: 3.25px
+                box-shadow: 2px 2px 2px $options-border
+                margin-left: blh(.4)
+                width: blh(7.1)
+                -webkit-appearance: none
+                -moz-appearance: none
+                text-indent: 1px
+                text-overflow: ''
+                padding-left: blh(.5)
+                margin-right:
+            .icon
+                position: absolute
+                right: blh(.7)
+                top: 4px
+
+
+

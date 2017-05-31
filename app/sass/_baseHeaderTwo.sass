@@ -37,12 +37,18 @@
         top: 3px
         .icon
             width: $blh
+            -ms-transform: scale(.8)
+            -webkit-transform: scale(.8)
+            transform: scale(.8)
+            position: relative
+            top: 2px
         input
             width: blh(20)
             border: none
             color: black
             &::placeholder
                 color: $placeholder-text
+                font-family: $title-font
     &__menu
         display: flex
         flex-direction: row

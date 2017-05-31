@@ -55,21 +55,25 @@
             margin-right: blh(.5)
             margin-left: blh(.3)
         ::-webkit-input-placeholder
-            font-family: $text-font
+            font-family: $title-font
             padding-left: blh(.5)
             font-size: $bfs * .8
         ::-moz-placeholder
-            color:  $text-font
+            font-family: $title-font
             padding-left: blh(.5)
+            font-size: $bfs * .8
         :-ms-input-placeholder
-            color:  $text-font
+            font-family: $title-font
             padding-left: blh(.5)
+            font-size: $bfs * .8
         :-moz-placeholder
-            color:  $text-font
+            font-family: $title-font
             padding-left: blh(.5)
+            font-size: $bfs * .8
         span
             font-style: italic
             position: relative
+            color: $form-color
             top: 1px
         .selectbox
             display: flex
@@ -86,10 +90,12 @@
                 text-indent: 1px
                 text-overflow: ''
                 padding-left: blh(.5)
+                font-family: $title-font
             .icon
                 position: absolute
                 right: 3px
                 top: 4px
+                fill: $form-color
     &__layerThree-box
         display: flex
         align-items: center
@@ -97,6 +103,7 @@
         margin-top: $blh
         font-family: $text-font
         font-size: $bfs * .8
+        //background-color: green
         .icon
             display: block
             margin-left: blh(.9)
@@ -108,11 +115,12 @@
         span
             font-style: italic
             position: relative
+            color: $form-color
             top: 1px
         .selectbox
             display: flex
             position: relative
-            width: blh(8.1)
+            width: blh(6)
             border-right: 1px solid $options-border
             margin-right: blh(.3)
             //background-color: pink
@@ -123,24 +131,89 @@
                 border-radius: 3.25px
                 box-shadow: 2px 2px 2px $options-border
                 margin-left: blh(.4)
-                width: blh(7.1)
+                width: blh(5)
                 -webkit-appearance: none
                 -moz-appearance: none
                 text-indent: 1px
                 text-overflow: ''
-                padding-left: blh(.5)
-                margin-right:
+                padding-left: blh(.3)
+                font-family: $title-font
             .icon
                 position: absolute
                 right: blh(.7)
                 top: 4px
+                fill: $form-color
         .icon-box
             margin-left: blh(.5)
-            position: relative
-            top: 2px
+            border: 1px solid $options-border
+            border-radius: 3.25px
+            box-shadow: 2px 2px 2px $options-border
+            width: blh(3.5)
+            height: $blh
+            display: flex
+            align-items: center
+            justify-content: space-around
             .icon2
                 fill: $view-color-icon
                 width: $blh
+                position: relative
+                left: 4px
+            .selected
+                //fill: $view-color-icon-selected
+                background: $view-color-icon-selected-background
+                border-radius: 0 3.25px 3.25px 0
+                height: blh(.95)
+                width: blh(1.1)
+                display: flex
+                align-items: center
+                position: relative
+                left: 1.5px
+                .icon2
+                    fill: $view-color-icon-selected
+                    position: relative
+                    left: 6px
+    &__layerFour-box
+        background-color: $infobox-background
+        margin-top: blh(1)
+        margin-left: blh(1)
+        margin-right: blh(1)
+        height: blh(9)
+        border-radius: 3.25px
+        color: $content-background
+        padding-top: blh(1)
+        padding-left: blh(1)
+        line-height: blh(1)
+        position: relative
+        span
+            font-family: $title-font
+            font-weight: $bold
+            font-size: $bfs * 1.5
+        p
+            font-family: $text-font
+            position: relative
+            top: -2px
+            margin: 0
+            margin-top: blh(1)
+            padding-right: blh(1)
+            font-size: $bfs * 1.1
+        .choice
+            margin-top: blh(.85)
+            span
+                margin-right: blh(1)
+                font-size: $bfs * 1.2
+        .icon-plus
+            display: block
+            -ms-transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+            transform: rotate(45deg)
+            width: blh(1)
+            height: blh(1)
+            fill: $button-background
+            position: absolute
+            right: blh(1)
+            top: blh(1.15)
+
+
 
 
 

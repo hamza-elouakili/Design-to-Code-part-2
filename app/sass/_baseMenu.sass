@@ -9,7 +9,7 @@
             padding: 0
             padding-top: $blh
             margin: 0
-            font-family: $text-font
+            font-family: $title-font
             li > ul li
                 margin-left: blh(.35)
             li
@@ -71,27 +71,31 @@
             margin: 0
             padding: 0
             padding-left: $blh
-            font-family: $text-font
+            font-family: $title-font
             font-size: $bfs * .9
             .help
                 display: flex
                 align-items: center
                 .help-box
-                    border: 1px solid black
+                    border: 1px solid $help
                     border-radius: 50%
-                    height: blh(.8)
-                    width: blh(.8)
-                    // position: relative
-                    // left: -2px
+                    height: blh(.7)
+                    width: blh(.7)
+                    position: relative
+                    left: 2px
                     margin-right: blh(.2)
                     .help-icon
                         position: relative
-                        left: 1px
-                        top: 1px
-                        -ms-transform: scale(.8)
-                        -webkit-transform: scale(.8)
-                        transform: scale(.8)
+                        //left: 1px
+                        top: -1px
+                        -ms-transform: scale(.7)
+                        -webkit-transform: scale(.7)
+                        transform: scale(.7)
+                        fill: $help
                 span
                     margin-left: blh(.2)
+                    color: $help
+                    position: relative
+                    top: 1px
 
 

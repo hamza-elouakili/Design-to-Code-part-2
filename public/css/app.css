@@ -845,34 +845,32 @@ footer.task1 {
       position: relative;
       top: 1px; }
 
-.baseMenu {
+.menu {
   display: flex;
   flex-direction: column;
-  margin-right: 1.625rem;
-  width: 17.875rem; }
-  .baseMenu__up {
-    background-color: red;
+  margin-right: 1.625rem; }
+  .menu__up {
     flex: 1; }
-    .baseMenu__up ul.top {
+    .menu__up ul.top {
       list-style-type: none;
       padding: 0;
       padding-top: 1.625rem;
       margin: 0;
       font-family: Roboto, Arial, sans-serif; }
-      .baseMenu__up ul.top li > ul li {
+      .menu__up ul.top li > ul li {
         margin-left: 0.56875rem; }
-      .baseMenu__up ul.top li {
+      .menu__up ul.top li {
         line-height: 1.625rem;
         font-weight: 700;
         font-size: 0.9rem; }
-        .baseMenu__up ul.top li .menu-item {
+        .menu__up ul.top li .menu-item {
           padding-left: 1.625rem;
           display: flex;
           align-items: center;
           position: relative; }
-          .baseMenu__up ul.top li .menu-item span.uppercase {
+          .menu__up ul.top li .menu-item span.uppercase {
             text-transform: uppercase; }
-          .baseMenu__up ul.top li .menu-item span.icon-accordion {
+          .menu__up ul.top li .menu-item span.icon-accordion {
             margin-right: 0.325rem;
             width: 1.625rem;
             height: 1.625rem;
@@ -881,23 +879,23 @@ footer.task1 {
             -ms-transform: scale(0.8);
             -webkit-transform: scale(0.8);
             transform: scale(0.8); }
-          .baseMenu__up ul.top li .menu-item .icon-angledown {
+          .menu__up ul.top li .menu-item .icon-angledown {
             display: block;
             -ms-transform: scale(0.5);
             -webkit-transform: scale(0.5);
             transform: scale(0.5);
             position: absolute;
             right: 1.625rem; }
-      .baseMenu__up ul.top li > ul {
+      .menu__up ul.top li > ul {
         padding-left: 3.0875rem;
         list-style-type: none; }
-        .baseMenu__up ul.top li > ul li {
+        .menu__up ul.top li > ul li {
           font-weight: 400;
           font-size: 0.8rem;
           padding-top: 0.4875rem; }
-        .baseMenu__up ul.top li > ul li:last-child {
+        .menu__up ul.top li > ul li:last-child {
           padding-bottom: 0.4875rem; }
-      .baseMenu__up ul.top li > ul.accordion {
+      .menu__up ul.top li > ul.accordion {
         border-top: 1px #e6e9ed solid;
         border-bottom: 1px #e6e9ed solid;
         background: #f5f7fa;
@@ -905,34 +903,32 @@ footer.task1 {
         background: -o-linear-gradient(right right, #f5f7fa, #FEFEFE);
         background: -moz-linear-gradient(right right, #f5f7fa, #FEFEFE);
         background: linear-gradient(to right right, #f5f7fa, #FEFEFE); }
-  .baseMenu__down {
-    background-color: green;
-    height: 5em; }
-    .baseMenu__down ul.down {
+  .menu__down {
+    margin-bottom: 1.625rem; }
+    .menu__down ul.down {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      margin-bottom: 1.625rem;
       padding-left: 1.625rem;
       font-family: Roboto, Arial, sans-serif;
       font-size: 0.9rem; }
-      .baseMenu__down ul.down .help {
+      .menu__down ul.down .help {
         display: flex;
         align-items: center; }
-        .baseMenu__down ul.down .help .help-box {
+        .menu__down ul.down .help .help-box {
           border: 1px solid black;
           border-radius: 50%;
           height: 1.3rem;
           width: 1.3rem;
           margin-right: 0.325rem; }
-          .baseMenu__down ul.down .help .help-box .help-icon {
+          .menu__down ul.down .help .help-box .help-icon {
             position: relative;
             left: 1px;
             top: 1px;
             -ms-transform: scale(0.8);
             -webkit-transform: scale(0.8);
             transform: scale(0.8); }
-        .baseMenu__down ul.down .help span {
+        .menu__down ul.down .help span {
           margin-left: 0.325rem; }
 
 .baseAside {
@@ -1032,14 +1028,23 @@ footer.task1 {
   justify-content: center; }
   .responsivebox .page-container-task2 {
     width: 92.625rem;
-    background-color: pink; }
+    display: flex;
+    flex-direction: column; }
     .responsivebox .page-container-task2 header {
       border-bottom: 1px solid #e6e9ed;
       height: 4.875rem;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      position: fixed;
+      z-index: 1;
+      background-color: #FEFEFE;
+      width: 92.625rem; }
     .responsivebox .page-container-task2 section.task2 {
-      display: flex; }
+      display: flex;
+      background-color: #FEFEFE;
+      height: 100%;
+      margin-top: 4.875rem;
+      width: 92.625rem; }
       .responsivebox .page-container-task2 section.task2 .menu {
         height: 100%;
         width: 17.875rem;
@@ -1047,5 +1052,5 @@ footer.task1 {
       .responsivebox .page-container-task2 section.task2 .content {
         width: 52rem; }
       .responsivebox .page-container-task2 section.task2 .aside {
-        width: 21.125rem;
+        width: 22.75rem;
         border-left: 1px solid #e6e9ed; }

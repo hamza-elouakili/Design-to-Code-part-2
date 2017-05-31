@@ -4,16 +4,23 @@
     justify-content: center
     .page-container-task2
         width: blh(57)
-        // min-width: blh(57)
-        // max-width: blh(57)
-        background-color: pink
+        display: flex
+        flex-direction: column
         header
             border-bottom: 1px solid $header-border
             height: blh(3)
             display: flex
             align-items: center
+            position: fixed
+            z-index: 1
+            background-color: $header-background
+            width: blh(57)
         section.task2
             display: flex
+            background-color: $content-background
+            height: 100%
+            margin-top: blh(3)
+            width: blh(57)
             .menu
                 height: 100%
                 width: blh(11)
@@ -21,6 +28,6 @@
             .content
                 width: blh(32)
             .aside
-                width: blh(13)
+                width: blh(14)
                 border-left: 1px solid $header-border
 

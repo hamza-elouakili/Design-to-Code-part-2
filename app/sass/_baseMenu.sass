@@ -1,10 +1,8 @@
-.baseMenu
+.menu
     display: flex
     flex-direction: column
     margin-right: $blh
-    width: blh(11)
     &__up
-        background-color: red
         flex: 1
         ul.top
             list-style-type: none
@@ -66,13 +64,11 @@
                 background: -moz-linear-gradient(right right,$accordion-background, $accordion-background2)
                 background: linear-gradient(to right right, $accordion-background, $accordion-background2)
     &__down
-        background-color: green
-        height: 5em
+        margin-bottom: $blh
         ul.down
             list-style-type: none
             margin: 0
             padding: 0
-            margin-bottom: $blh
             padding-left: $blh
             font-family: $text-font
             font-size: $bfs * .9

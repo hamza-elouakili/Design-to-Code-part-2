@@ -195,23 +195,415 @@
             margin: 0
             margin-top: blh(1)
             padding-right: blh(1)
-            font-size: $bfs * 1.1
+            font-size: $bfs * 1
         .choice
             margin-top: blh(.85)
             span
                 margin-right: blh(1)
-                font-size: $bfs * 1.2
+                font-size: $bfs * 1
         .icon-plus
             display: block
-            -ms-transform: rotate(45deg)
-            -webkit-transform: rotate(45deg)
-            transform: rotate(45deg)
+            -ms-transform: rotate(45deg) scale(1.2)
+            -webkit-transform: rotate(45deg) scale(1.2)
+            transform: rotate(45deg) scale(1.2)
             width: blh(1)
             height: blh(1)
             fill: $button-background
             position: absolute
             right: blh(1)
             top: blh(1.15)
+    &__layerFive-box
+        margin-top: blh(1)
+        display: flex
+        article
+            border: 1px solid $options-border
+            box-shadow: 1px 1px 1px $options-border
+            border-radius: 3.25px
+            padding-left: blh(1)
+            padding-right: blh(1)
+            padding-top: blh(.35)
+            padding-bottom: blh(.45)
+            display: flex
+            flex-direction: column
+            width: blh(14)
+            height: blh(11)
+            min-height: blh(11)     //So that content doesn't mis-allign
+            max-height: blh(11)     //So that content doesn't mis-allign
+            margin-left: blh(1)
+            margin-right: blh(1)
+            span.title
+                font-weight: $bold
+                font-family: $title-font
+                font-size: $bfs * 1.5
+                -webkit-transform: scale(1.03, 1)
+                -moz-transform: scale(1.03, 1)
+                -ms-transform: scale(1.03, 1)
+                -o-transform: scale(1.03, 1)
+                transform: scale(1.03, 1)
+                position: relative
+                left: 4px
+                margin-bottom: blh(.4)
+            .metadata
+                font-size: $bfs * .9
+                margin-bottom: blh(.55)
+                font-family: $title-font
+                .publish
+                    background-color: $infobox-background
+                    padding-left: 3px
+                    padding-right: 3px
+                    padding-bottom: 1px
+                    padding-top: 1px
+                    color: $button-background
+                    border-radius: 3.25px
+                    width: blh(2.5)
+                    margin-right: blh(.2)
+                .date
+                    color: $article-meta
+                    margin-right: blh(.1)
+                .in
+                    font-style: italic
+                    color: $article-meta
+                    margin-right: blh(.2)
+                .magazines
+                    font-weight: $bold
+            img
+                -moz-transform: scaleX(-1)
+                -o-transform: scaleX(-1)
+                -webkit-transform: scaleX(-1)
+                transform: scaleX(-1)
+            p
+                font-size: $bfs * .8
+                line-height: blh(.7)
+                font-family: $text-font
+                margin-bottom: blh(.95)
+                font-weight: $medium
+            .socialmedia
+                display: flex
+                .item
+                    display: flex
+                    align-items: center
+                    height: blh(.9)
+                    font-size: $bfs * .8
+                    color: $article-social
+                    .icon
+                        margin-right: blh(.3)
+                        position: relative
+                        top: 1px
+                        fill: $article-social
+                    .data
+                        margin-right: blh(.4)
+                        font-family: $number-font
+                    .last
+                        //margin-left: blh(.2)
+                        width: blh(3.75)
+                        margin-right: 0
+                        font-family: $title-font
+                    .rotate
+                        display: block
+                        -ms-transform: rotate(90deg) scale(.8)
+                        -webkit-transform: rotate(90deg) scale(.8)
+                        transform: rotate(90deg) scale(.8)
+        article.type2
+            padding-left: 0
+            padding-right: 0
+            position: relative
+            p
+                position: absolute
+                width: blh(12)
+                padding-left: blh(1)
+                top: blh(6)
+                color: $content-background
+                font-weight: $regular
+                //font-size: $bfs * .8
+            img
+                filter: brightness(20%)
+            .socialmedia
+                padding-left: blh(1)
+                margin-top: blh(.55)
+            .metadata
+                padding-left: blh(1)
+            .title
+                padding-left: blh(1)
+    &__layerSix-box
+        margin-top: blh(1)
+        border: 1px solid $options-border
+        box-shadow: 1px 1px 1px $options-border
+        border-radius: 3.25px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: blh(14)
+        height: blh(11)
+        margin-left: blh(1)
+        margin-right: blh(1)
+        fill: $article-meta
+        color: $article-meta
+        font-weight: $medium
+        font-size: $bfs * 1.4
+        font-family: $text-font
+        .icon
+            display: block
+            -webkit-transform: scale(1.8)
+            -moz-transform: scale(1.8)
+            -ms-transform: scale(1.8)
+            -o-transform: scale(1.8)
+            transform: scale(1.8)
+            position: relative
+            top: blh(-0.5)
+        .text
+            position: relative
+            top: blh(-0.4)
+    &__layerSeven-box
+        margin-top: blh(1)
+        display: flex
+        article
+            border: 1px solid $options-border
+            box-shadow: 1px 1px 1px $options-border
+            border-radius: 3.25px
+            padding-left: blh(1)
+            padding-right: blh(1)
+            padding-top: blh(.35)
+            padding-bottom: blh(.45)
+            display: flex
+            flex-direction: column
+            width: blh(31)
+            height: blh(8)
+            min-height: blh(8)     //So that content doesn't mis-allign
+            max-height: blh(8)     //So that content doesn't mis-allign
+            margin-left: blh(1)
+            margin-right: blh(1)
+            span.title
+                font-weight: $bold
+                font-family: $title-font
+                font-size: $bfs * 1.5
+                -webkit-transform: scale(1.03, 1)
+                -moz-transform: scale(1.03, 1)
+                -ms-transform: scale(1.03, 1)
+                -o-transform: scale(1.03, 1)
+                transform: scale(1.03, 1)
+                position: relative
+                left: blh(.5)
+                margin-bottom: blh(.4)
+            .metadata
+                font-size: $bfs * .9
+                margin-bottom: blh(.55)
+                font-family: $title-font
+                .publish
+                    background-color: $infobox-background
+                    padding-left: 3px
+                    padding-right: 3px
+                    padding-bottom: 1.5px
+                    padding-top: 1px
+                    color: $button-background
+                    border-radius: 3.25px
+                    width: blh(2.5)
+                    margin-right: blh(.2)
+                    font-size: $bfs * .8
+                .date
+                    color: $article-meta
+                    margin-right: blh(.1)
+                .in
+                    font-style: italic
+                    color: $article-meta
+                    margin-right: blh(.4)
+                .magazines
+                    font-weight: $bold
+            .box
+                display: flex
+                &__left
+                    img
+                        -moz-transform: scaleX(-1)
+                        -o-transform: scaleX(-1)
+                        -webkit-transform: scaleX(-1)
+                        transform: scaleX(-1)
+                        margin-right: blh(1)
+                &__right
+                    p
+                        margin-top: blh(.3)
+                        font-size: $bfs * .8
+                        line-height: blh(.7)
+                        font-family: $text-font
+                        font-weight: $medium
+                        width: blh(20)
+                        margin-right: 2
+                    .socialmedia
+                        display: flex
+                        margin-top: blh(.8)
+                        color: $article-social
+                        .item
+                            display: flex
+                            align-items: center
+                            height: blh(.9)
+                            font-size: $bfs * .8
+                            fill: $article-social
+                            .icon
+                                margin-right: blh(.3)
+                                position: relative
+                                top: 1px
+                            .data
+                                margin-right: blh(.4)
+                                font-family: $number-font
+                            .last
+                                //margin-left: blh(.2)
+                                width: blh(13)
+                                margin-right: 0
+                                font-family: $title-font
+                            .rotate
+                                display: block
+                                -ms-transform: rotate(90deg) scale(.8)
+                                -webkit-transform: rotate(90deg) scale(.8)
+                                transform: rotate(90deg) scale(.8)
+    &__layerEight-box
+        margin-top: blh(1)
+        border: 1px solid $options-border
+        box-shadow: 1px 1px 1px $options-border
+        border-radius: 3.25px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        width: blh(31)
+        height: blh(4)
+        margin-left: blh(1)
+        margin-right: blh(1)
+        fill: $article-meta
+        color: $article-meta
+        font-weight: $medium
+        font-size: $bfs * 1.4
+        font-family: $text-font
+        .icon
+            display: block
+            -webkit-transform: scale(1.3)
+            -moz-transform: scale(1.5)
+            -ms-transform: scale(1.5)
+            -o-transform: scale(1.5)
+            transform: scale(1.3)
+            margin-right: blh(.5)
+            // position: relative
+            // top: blh(-.55)
+    &__layerNine-box
+        margin-top: blh(1)
+        display: flex
+        article       
+            padding-top: blh(.35)
+            padding-bottom: blh(.45)
+            display: flex
+            flex-direction: row
+            width: blh(31)
+            height: blh(3)
+            min-height: blh(3)     //So that content doesn't mis-allign
+            max-height: blh(3)     //So that content doesn't mis-allign
+            margin-left: blh(1)
+            margin-right: blh(1)
+            span.title
+                font-weight: $bold
+                font-family: $title-font
+                font-size: $bfs * 1.55
+                -webkit-transform: scale(1.03, 1)
+                -moz-transform: scale(1.03, 1)
+                -ms-transform: scale(1.03, 1)
+                -o-transform: scale(1.03, 1)
+                transform: scale(1.05, 1)
+                position: relative
+                // /left: blh(.5)
+                margin-bottom: blh(.5)
+            .metadata
+                font-size: $bfs * .9
+                margin-bottom: blh(.55)
+                margin-top: blh(.4)
+                font-family: $title-font
+                .publish
+                    background-color: $infobox-background
+                    padding-left: 3px
+                    padding-right: 3px
+                    padding-bottom: 1.5px
+                    padding-top: 1px
+                    color: $button-background
+                    border-radius: 3.25px
+                    width: blh(2.5)
+                    margin-right: blh(.2)
+                    font-size: $bfs * .8
+                .date
+                    color: $article-meta
+                    margin-right: blh(.1)
+                .in
+                    font-style: italic
+                    color: $article-meta
+                    margin-right: blh(.4)
+                .magazines
+                    font-weight: $bold
+            .box-right
+                display: flex
+                margin-left: blh(1)
+                .socialmedia
+                    display: flex
+                    margin-top: blh(1.3)
+                    color: $article-social
+                    .item
+                        display: flex
+                        align-items: center
+                        height: blh(.9)
+                        font-size: $bfs * .8
+                        fill: $article-social
+                        .icon
+                            margin-right: blh(.3)
+                            position: relative
+                            top: 1px
+                        .data
+                            margin-right: blh(.4)
+                            font-family: $number-font
+                        .last
+                            //margin-left: blh(.2)
+                            width: blh(9)
+                            margin-right: 0
+                            font-family: $title-font
+                        .rotate
+                            display: block
+                            -ms-transform: rotate(90deg) scale(.8)
+                            -webkit-transform: rotate(90deg) scale(.8)
+                            transform: rotate(90deg) scale(.8)
+    &__layerTen-box
+        display: flex
+        justify-content: center
+        margin-bottom: blh(1)
+        .box
+            margin-top: blh(1)
+            border: 1px solid $options-border
+            box-shadow: 1px 1px 1px $options-border
+            border-radius: 3.25px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            width: blh(9.7)
+            height: blh(1.1)
+            margin-left: blh(1)
+            margin-right: blh(1)
+            fill: $article-meta
+            color: $article-meta
+            font-weight: $medium
+            font-size: $bfs * .9
+            font-family: $text-font
+            position: relative
+            top: blh(-.1)
+            right: blh(.8)
+            .icon
+                display: block
+                -webkit-transform: scale(.8)
+                -moz-transform: scale(.8)
+                -ms-transform: scale(.8)
+                -o-transform: scale(.8)
+                transform: scale(.8)
+                margin-right: blh(.3)
+                position: relative
+                top: blh(.05)
+
+
+
+
+
+
 
 
 
